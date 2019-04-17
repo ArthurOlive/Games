@@ -16,7 +16,7 @@ class Palavra():
                 self.erros += 1
                 print("Erro!!")
             else:
-                self.acertos += 1
+                self.acertos += list(self.palavra[0]).count(letra)
                 print("Acerto")
     def mostrarPalavra(self):
         palavraShow = ''
